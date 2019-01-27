@@ -1,1 +1,2 @@
 Hasher.js
+SimpleEncryptor.js
