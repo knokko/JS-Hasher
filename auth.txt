@@ -23,7 +23,7 @@ encrypted clientStartSeed to the server.
 match the test payload, it knows that the client is the owner of the account. 
 If it does not match, it will let the client
 know that the password was incorrect. The server will encrypt the test payload and 2 random half seeds for the session randoms 
-using the serverStartSeed and send it to the client.
+using the serverStartSeed and the half of the seed the client requested and send it to the client.
 
 -The client decrypts the test payload and the half seeds and checks if the test payload is the real test payload. 
 If it is not, the client will terminate the connection and warn the user that the server connection was corrupted.
